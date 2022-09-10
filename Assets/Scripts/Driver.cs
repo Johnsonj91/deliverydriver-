@@ -17,8 +17,14 @@ public class Driver : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float steerAmount = Input.GetAxis("Horizontal") * steerSpeed;
-        float moveAmount = Input.GetAxis("Vertical") * moveSpeed;
+        // This is the old system of doing Input Axis in Unity 
+        // The delta time is allows for frame rate independence
+        //Steer Amount is from -1 to +1 on the X axis
+        float steerAmount = Input.GetAxis("Horizontal") * steerSpeed * Time.deltaTime;
+
+        //move Amount is from -1 to +1 on the Y axis
+        float moveAmount = Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime;
+        
         transform.Rotate(0,0, -steerAmount);
         transform.Translate(0, moveAmount,0);
     }

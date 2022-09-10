@@ -16,9 +16,16 @@ Unity Game Engine and C#
 
 
 ## Lessons Learned:##
+Using Time.deltaTime Unity tells us how long each frame took to execute
+When we multiple something byt the Time.deltaTime it makes the game "Frame Rate Independent"
 
-No matter what your experience level, being an engineer means continuously learning. Every time you build something you always have those *whoa this is awesome* or *fuck yeah I did it!* moments. This is where you should share those moments! Recruiters and interviewers love to see that you're self-aware and passionate about growing.
 
+Collision 
+You need to add a collider as well as a ridig body to the game object to intertact with an object. 
+
+### when adding a rigdge body the gravity is set to zero
+
+Added box collider to our player instead of a capsule collider to give it more of a push
 
 
 
