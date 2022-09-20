@@ -15,7 +15,7 @@ Unity Game Engine and C#
 *(optional)*
 
 
-## Lessons Learned:##
+## Lessons Learned:
 Using Time.deltaTime Unity tells us how long each frame took to execute
 When we multiple something byt the Time.deltaTime it makes the game "Frame Rate Independent"
 
@@ -27,7 +27,10 @@ You need to add a collider as well as a ridig body to the game object to interta
 
 Added box collider to our player instead of a capsule collider to give it more of a push
 
+Added Delta Time to allow frame rate Independence
 
+Created a collision script using On Collision Enter
+Allows use to do something when collision is detected
 
 
 
